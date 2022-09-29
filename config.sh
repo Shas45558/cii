@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Device
-export TWRP_BRANCH="Tt"
-export DT_LINK="https://github.com/Arafattex/twrp_device_xiaomi_begonia -b Lancelot"
+export TWRP_BRANCH="Twrp-12.1"
+export DT_LINK="https://github.com/Arafattex/S-Vendor-Twrp-Tree-for-mt6768.git -b Lancelot"
 
 export DEVICE="lancelot"
 export OEM="xiaomi"
