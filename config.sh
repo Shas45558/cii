@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Device
-export FOX_BRANCH="fox_12.1"
-export DT_LINK="https://github.com/Arafattex/S-Vendor-Twrp-Tree-for-mt6768.git -b Lancelot_ofox"
+export TWRP_BRANCH="Tt"
+export DT_LINK="https://github.com/Arafattex/twrp_device_xiaomi_begonia -b Lancelot"
 
 export DEVICE="lancelot"
 export OEM="xiaomi"
@@ -13,20 +13,7 @@ export OEM="xiaomi"
 ## "vendorbootimage" - for devices Using vendor boot for the recovery ramdisk (Usually for devices shipped with Android 12 or higher)
 export TARGET="recoveryimage"
 
-export OUTPUT="OrangeFox*.zip"
-
-# Additional Dependencies (eg: Kernel Source)
-# Format: "repo dest"
-DEPS=(
-    ""
-)
-
-# Extra Command
-export EXTRA_CMD="export OF_MAINTAINER=@shas45558"
-
-# Magisk
-## Use the Latest Release of Magisk for the OrangeFox addon
-export OF_USE_LATEST_MAGISK=true
+export OUTPUT="Twrp*.zip"
 
 # Not Recommended to Change
 export SYNC_PATH="$HOME/work" # Full (absolute) path.

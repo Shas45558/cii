@@ -12,7 +12,7 @@ telegram_message() {
 }
 
 # Change to the Source Directory
-cd $SYNC_PATH
+cd ~
 
 # Color
 ORANGE='\033[0;33m'
@@ -26,7 +26,7 @@ echo "============================"
 cd out/target/product/${DEVICE}
 
 # Set FILENAME var
-FILENAME=$(echo $OUTPUT)
+FILENAME=recovery.img
 
 # Upload to oshi.at
 if [ -z "$TIMEOUT" ];then
@@ -57,13 +57,13 @@ echo -e \
 "
 🦊 OrangeFox Recovery CI
 
-✅ Build Completed Successfully!
+✄1�7 Build Completed Successfully!
 
 📱 Device: "${DEVICE}"
 🖥 Build System: "${FOX_BRANCH}"
 ⬇️ Download Link: <a href=\"${DL_LINK}\">Here</a>
 📅 Date: "$(date +%d\ %B\ %Y)"
-⏱ Time: "$(date +%T)"
+⏄1�7 Time: "$(date +%T)"
 " > tg.html
 
 TG_TEXT=$(< tg.html)
