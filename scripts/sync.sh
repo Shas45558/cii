@@ -16,7 +16,7 @@ telegram_message() {
 
 # Clone the Sync Repo
 repo init --depth=1 -u $TWRP_SYNC -b $TWRP_BRANCH
-
+repo sync
 
 # Clone Trees
 DT_PATH="device/${OEM}/${DEVICE}"
