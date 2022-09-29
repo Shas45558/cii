@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Device
-export TWRP_BRANCH="Twrp-12.1"
+export TWRP_BRANCH="twrp-12.1"
 export DT_LINK="https://github.com/Arafattex/S-Vendor-Twrp-Tree-for-mt6768.git -b Lancelot"
 
 export DEVICE="lancelot"
