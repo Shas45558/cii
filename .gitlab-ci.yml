@@ -10,6 +10,6 @@ OrangeFox-CI:
   script:
     - source config.sh
     - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/shas/scripts/checks.sh | bash
-    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/sync/scripts/sync.sh | bash
-    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/sync/scripts/build.sh | bash
-    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/sync/scripts/upload.sh | bash
+    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/shas/scripts/sync.sh | bash
+    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/shas/scripts/build.sh | bash
+    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/shas/scripts/upload.sh | bash
