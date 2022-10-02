@@ -1,6 +1,6 @@
 env:
     # Twrp Sync Repository
-    TWRP_SYNC: https://github.com/Arafattex/platform_manifest_twrp_aosp.git -b Tt
+    TWRP_SYNC: https://github.com/PitchBlackRecoveryProject/manifest_pb.git
 
     # Config
     CONFIG: config.sh
