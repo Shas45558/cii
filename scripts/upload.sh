@@ -27,6 +27,7 @@ cd out/target/product/${DEVICE}
 
 # Set FILENAME var
 FILENAME=recovery.img
+FILENAME2=boot.img
 
 # Upload to oshi.at
 if [ -z "$TIMEOUT" ];then
@@ -36,12 +37,16 @@ fi
 # Upload to WeTransfer
 # NOTE: the current Docker Image, "registry.gitlab.com/sushrut1101/docker:latest", includes the 'transfer' binary by Default
 transfer wet $FILENAME > link.txt || { echo "ERROR: Failed to Upload the Build!" && exit 1; }
+transfer wet $FILENAME2 > link2.txt || { echo "ERROR: Failed to Upload the Build!" && exit 1; }
+
 
 DL_LINK=$(cat link.txt | grep Download | cut -d\  -f3)
+DL_LINK2=$(cat link2.txt | grep Download | cut -d\  -f3)
 
 # Show the Download Link
 echo "=============================================="
 echo "Download Link: ${DL_LINK}" || { echo "ERROR: Failed to Upload the Build!"; }
+echo "Download Link: ${DL_LINK2}" || { echo "ERROR: Failed to Upload the Build!"; }
 echo "=============================================="
 
 DATE_L=$(date +%d\ %B\ %Y)
@@ -53,8 +58,9 @@ echo -e \
 🦊 OrangeFox Recovery CI
 ✅ Build Completed Successfully!
 📱 Device: "${DEVICE}"
-🖥 Build System: "${FOX_BRANCH}"
+🖥 Build System: "${TWRP_BRANCH}"
 ⬇️ Download Link: <a href=\"${DL_LINK}\">Here</a>
+⬇️ Download Link: <a href=\"${DL_LINK2}\">Here</a>
 📅 Date: "$(date +%d\ %B\ %Y)"
 ⏱ Time: "$(date +%T)"
 " > tg.html
