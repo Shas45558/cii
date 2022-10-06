@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Device
-export TWRP_BRANCH="twrp-12.1t"
-export DT_LINK="https://github.com/Arafattex/S-Vendor-Twrp-Tree-for-mt6768.git -b Merlin"
+export TWRP_BRANCH="twrp-12.1"
+export DT_LINK="https://github.com/Arafattex/device_xiaomi_garden -b fox_11.0_Q"
 
-export DEVICE="merlin"
+export DEVICE="garden"
 export OEM="xiaomi"
 
 # Build Target
