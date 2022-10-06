@@ -2,10 +2,10 @@
 
 # Device
 export TWRP_BRANCH="twrp-11"
-export DT_LINK="https://github.com/Arafattex/ums512 -b Z33"
+export DT_LINK="https://github.com/Arafattex/ums512 -b in2b"
 
-export DEVICE="Z33"
-export OEM="symphony"
+export DEVICE="E7544"
+export OEM="micromax"
 
 # Build Target
 ## "recoveryimage" - for A-Only Devices without using Vendor Boot
