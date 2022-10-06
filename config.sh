@@ -1,17 +1,17 @@
 #!/bin/bash
 
 # Device
-export TWRP_BRANCH="twrp-12.1"
-export DT_LINK="https://github.com/Arafattex/device_xiaomi_garden -b fox_11.0_Q"
+export TWRP_BRANCH="twrp-11"
+export DT_LINK="https://github.com/Arafattex/ums512 -b Z33"
 
-export DEVICE="garden"
-export OEM="xiaomi"
+export DEVICE="Z33"
+export OEM="symphony"
 
 # Build Target
 ## "recoveryimage" - for A-Only Devices without using Vendor Boot
 ## "bootimage" - for A/B devices without recovery partition (and without vendor boot)
 ## "vendorbootimage" - for devices Using vendor boot for the recovery ramdisk (Usually for devices shipped with Android 12 or higher)
-export TARGET="recoveryimage"
+export TARGET="bootimage"
 
 export OUTPUT="Twrp*.zip"
 
