@@ -2,7 +2,7 @@
 
 # Device
 export TWRP_BRANCH="twrp-11"
-export DT_LINK="https://github.com/Arafattex/ums512 -b in2bt"
+export DT_LINK="https://github.com/Arafattex/ums512 -b in2b"
 
 export DEVICE="E7544"
 export OEM="micromax"
