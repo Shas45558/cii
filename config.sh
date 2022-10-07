@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Device
-export TWRP_BRANCH="twrp-11"
-export DT_LINK="https://github.com/Arafattex/ums512 -b in2b"
+export TWRP_BRANCH="twrp-12.1_11"
+export DT_LINK="https://github.com/Arafattex/S-Vendor-Twrp-Tree-for-mt6768 -b Lc"
 
-export DEVICE="E7544"
-export OEM="micromax"
+export DEVICE="lancelot"
+export OEM="xiaomi"
 
 # Build Target
 ## "recoveryimage" - for A-Only Devices without using Vendor Boot
