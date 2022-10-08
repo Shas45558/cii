@@ -15,7 +15,7 @@ telegram_message() {
 }
 
 # Clone the Sync Repo
-git clone $FOX_SYNC
+git clone $FOX_SYNC /sync
 cd sync
 
 # Setup Branch names
