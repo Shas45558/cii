@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Device
-export FOX_BRANCH="fox_11"
+export FOX_BRANCH="fox_11.0"
 export DT_LINK="https://github.com/Arafattex/ums512.git -b in2b"
 
 export DEVICE="E7544"
