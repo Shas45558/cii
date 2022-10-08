@@ -15,8 +15,8 @@ telegram_message() {
 }
 
 # Clone the Sync Repo
-git clone $FOX_SYNC /sync
-cd sync
+git clone $FOX_SYNC 
+cd OrangeFox_sync
 
 # Setup Branch names
 if [ "$FOX_BRANCH" = "fox_12.0" ]; then
