@@ -26,7 +26,7 @@ echo "============================"
 cd out/target/product/${DEVICE}
 
 # Set FILENAME var
-FILENAME=recovery.img
+FILENAME=rlineage-20 *.zip
 FILENAME2=boot.img
 
 # Upload to oshi.at
