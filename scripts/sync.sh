@@ -16,8 +16,9 @@ telegram_message() {
 
 # Clone the Sync Repo
 repo init --depth=1 -u $ROM_SYNC -b $ROM_BRANCH
-repo init --depth=1 -u $DEVICE_SYNC
-repo sync
+curl -o .repo/local_manifests/local_manifests.xml https://raw.githubusercontent.com/Arafattex/Local_manifest_mt6768/Lancelot/13.xml --create-dirs
+repo sync -j$(nproc --all) --force-sync
+
 
 # Exit
 exit 0
