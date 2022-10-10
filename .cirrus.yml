@@ -1,7 +1,7 @@
 env:
     # Twrp Sync Repository
-    TWRP_SYNC: https://github.com/Arafattex/platform_manifest_twrp_aosp.git
-
+    ROM_SYNC: https://github.com/LineageOS/android.git
+    DEVICE_SYNC: https://github.com/Arafattex/Local_manifest_mt6768 --b Lancelot 
     # Config
     CONFIG: config.sh
 
@@ -21,14 +21,14 @@ task:
       memory: 20G
 
   Checks_script:
-      - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/twrp/scripts/checks.sh | bash
+      - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/checks.sh | bash
 
   Sync_script:
-      - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/twrp/scripts/sync.sh | bash
+      - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/sync.sh | bash
 
   Build_script:
-      - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/twrp/scripts/build.sh | bash
+      - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/build.sh | bash
 
   Upload_script:
       - export TIMEOUT=43200 # Link timeout (in minutes)
-      - curl https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/twrp/scripts/upload.sh | bash
+      - curl https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/upload.sh | bash

@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Device
-export TWRP_BRANCH="Bg"
-export DT_LINK="https://github.com/Arafattex/S-Vendor-Twrp-Tree-for-mt6768 -b Lancelot_bot2"
+export ROM_BRANCH="lineage-20"
 
 export DEVICE="lancelot"
 export OEM="xiaomi"

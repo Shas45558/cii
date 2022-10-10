@@ -52,11 +52,11 @@ export ALLOW_MISSING_DEPENDENCIES=true
 
 
 # lunch the target
-lunch twrp_${DEVICE}-eng
+lunch arrow_lava-eng
     
 # Build the Code
 
-mka -j$(nproc --all) $TARGET
+mka -j$(nproc --all) lava
 
 
 # Exit
