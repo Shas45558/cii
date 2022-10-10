@@ -52,7 +52,7 @@ export ALLOW_MISSING_DEPENDENCIES=true
 
 
 # lunch the target
-lunch arrow_lava-eng
+lunch lineage_lava-eng
     
 # Build the Code
 
