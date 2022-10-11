@@ -14,11 +14,11 @@ env:
 
 task:
   name: "Recovery Build"
-  timeout_in: 120m
+  timeout_in: 600m
   container:
       image: ghcr.io/sushrut1101/docker:arch
       cpu: 8
-      memory: 20G
+      memory: 32G
 
   Checks_script:
       - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/checks.sh | bash

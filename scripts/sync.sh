@@ -15,9 +15,11 @@ telegram_message() {
 }
 
 # Clone the Sync Repo
-repo init --depth=1 -u $ROM_SYNC -b $ROM_BRANCH
-repo init --depth=1 -u $DEVICE_SYNC
-repo sync
+repo init -u https://github.com/LineageOS/android.git -b lineage-20.0
+curl -o .repo/local_manifests/local_manifests.xml https://raw.githubusercontent.com/Arafattex/Local_manifest_mt6768/Lancelot/13.xml --create-dirs
+repo sync -j$(nproc --all) --force-sync
+rm -rf .repo
+df -BM
 
 # Exit
 exit 0

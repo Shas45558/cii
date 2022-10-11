@@ -52,11 +52,13 @@ export ALLOW_MISSING_DEPENDENCIES=true
 
 
 # lunch the target
-lunch arrow_lava-eng
+lunch lineage_lava-eng
     
 # Build the Code
 
-mka -j$(nproc --all) lava
+mka -j$(nproc --all) lineage_lava
+mka recovery.img
+
 
 
 # Exit
