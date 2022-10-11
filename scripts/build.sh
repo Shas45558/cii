@@ -57,7 +57,6 @@ lunch lineage_lava-eng
 # Build the Code
 
 mka -j$(nproc --all) lineage
-mka recovery.img
 
 
 
