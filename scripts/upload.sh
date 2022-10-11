@@ -23,7 +23,7 @@ echo "Uploading the Build..."
 echo "============================"
 
 # Change to the Output Directory
-cd out/target/product/${DEVICE}
+cd out/target/product/lava
 
 # Set FILENAME var
 FILENAME=recovery.img
