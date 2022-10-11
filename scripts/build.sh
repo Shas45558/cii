@@ -52,7 +52,7 @@ source build/envsetup.sh
 
 
 # lunch the target
-lunch aosp_lava-userdebug
+lunch lineage_lava-userdebug
     
 # Build the Code
 
