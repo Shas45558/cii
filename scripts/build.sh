@@ -52,11 +52,11 @@ source build/envsetup.sh
 
 
 # lunch the target
-lunch lineage_lava-userdebug
+lunch lineage_lava-user
     
 # Build the Code
 
-mka bacon -j8
+mka bacon -j20
 
 
 
