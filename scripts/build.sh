@@ -48,15 +48,15 @@ source build/envsetup.sh
 
 
 # export some Basic Vars
-export ALLOW_MISSING_DEPENDENCIES=true
+
 
 
 # lunch the target
-lunch lineage_lava-eng
+lunch pixel_lava-userdebug
     
 # Build the Code
 
-mka bacon
+mka bacon -j8
 
 
 

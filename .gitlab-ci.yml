@@ -6,10 +6,10 @@ variables:
 
 OrangeFox-CI:
   stage: build
-  timeout: 3 hours
+  timeout: 5 hours
   script:
     - source config.sh
-    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/shas/scripts/checks.sh | bash
-    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/shas/scripts/sync.sh | bash
-    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/shas/scripts/build.sh | bash
-    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/shas/scripts/upload.sh | bash
+    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/checks.sh | bash
+    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/sync.sh | bash
+    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/build.sh | bash
+    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/upload.sh | bash
