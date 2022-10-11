@@ -56,9 +56,7 @@ lunch lineage_lava-user
     
 # Build the Code
 
-mka bacon -j20
-
-
+mka -j$(nproc --all) bacon
 
 # Exit
 exit 0
