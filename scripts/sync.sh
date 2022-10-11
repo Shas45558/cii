@@ -15,7 +15,7 @@ telegram_message() {
 }
 
 # Clone the Sync Repo
-repo init --depth=1 -u $TWRP_SYNC -b $TWRP_BRANCH
+repo init -u $TWRP_SYNC -b $TWRP_BRANCH
 repo sync
 
 # Clone Trees
