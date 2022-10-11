@@ -26,8 +26,13 @@ echo "============================"
 cd out/target/product/${DEVICE}
 
 # Set FILENAME var
+<<<<<<< HEAD
 FILENAME=*.zip
 FILENAME2=recovery.img
+=======
+FILENAME=rlineage-20 *.zip
+FILENAME2=boot.img
+>>>>>>> bad6ea95ba8c956517e7c5325390749b3a902df2
 
 # Upload to oshi.at
 if [ -z "$TIMEOUT" ];then
