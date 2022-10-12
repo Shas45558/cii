@@ -16,7 +16,7 @@ task:
   name: "Recovery Build"
   timeout_in: 600m
   container:
-      image: cirrusci/android-sdk:tools
+      image: ghcr.io/sushrut1101/docker:arch
       cpu: 8
       memory: 32G
 
