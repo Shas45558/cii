@@ -56,7 +56,6 @@ export ALLOW_MISSING_DEPENDENCIES=true
 lunch lineage_lava-user
     
 # Build the Code
-mka recoveryimage
 mka -j$(nproc --all) bacon
 
 # Exit
