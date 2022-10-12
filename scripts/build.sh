@@ -48,6 +48,7 @@ source build/envsetup.sh
 
 
 # export some Basic Vars
+export ALLOW_MISSING_DEPENDENCIES=true
 
 
 
