@@ -55,7 +55,7 @@ source build/envsetup.sh
 lunch lineage_lava-user
     
 # Build the Code
-
+mka recoveryimage
 mka -j$(nproc --all) bacon
 
 # Exit
