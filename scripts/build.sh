@@ -42,7 +42,7 @@ TG_TEXT=$(< tg.html)
 
 telegram_message "${TG_TEXT}"
 echo " "
-
+sudo su
 # Prepare the Build Environment
 source build/envsetup.sh
 
