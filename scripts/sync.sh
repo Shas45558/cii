@@ -20,7 +20,7 @@ telegram_message() {
 # Clone the Sync Repo
 
 # Initialize local repository
-repo init -u https://github.com/Arafattex/los_manifest.git -b lineage-20.0
+repo init -u https://github.com/Arafattex/los_manifest.git -b lineage-20.0t
 curl -o .repo/local_manifests/local_manifests.xml https://raw.githubusercontent.com/Arafattex/Local_manifest_mt6768/Lancelot/13.xml --create-dirs
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
