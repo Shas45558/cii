@@ -4,6 +4,7 @@
 source $CONFIG
 
 # Change to the Home Directory
+sudo su
 cd ~
 curl --create-dirs -L -o /usr/local/bin/repo -O -L https://storage.googleapis.com/git-repo-downloads/repo
 chmod a+rx /usr/local/bin/repo
