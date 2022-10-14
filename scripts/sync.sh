@@ -4,7 +4,6 @@
 source $CONFIG
 
 # Change to the Home Directory
-sudo su
 cd ~
 curl --create-dirs -L -o /usr/local/bin/repo -O -L https://storage.googleapis.com/git-repo-downloads/repo
 chmod a+rx /usr/local/bin/repo
@@ -20,7 +19,7 @@ telegram_message() {
 # Clone the Sync Repo
 
 # Initialize local repository
-repo init -u https://github.com/Arafattex/los_manifest.git -b lineage-20.0t
+repo init -u https://github.com/Arafattex/los_manifest.git -b lineage-20.0
 curl -o .repo/local_manifests/local_manifests.xml https://raw.githubusercontent.com/Arafattex/Local_manifest_mt6768/Lancelot/13.xml --create-dirs
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
