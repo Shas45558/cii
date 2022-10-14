@@ -6,7 +6,6 @@ variables:
 
 OrangeFox-CI:
   stage: build
-  timeout: 5 hours
   script:
     - source config.sh
     - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/checks.sh | bash
