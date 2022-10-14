@@ -52,7 +52,7 @@ export ALLOW_MISSING_DEPENDENCIES=true
 
 
 # lunch the target
-breakfast lineage_lava-eng
+lunch aosp_merlinx-eng
     
 # Build the Code
 mka -j$(nproc --all) bacon
