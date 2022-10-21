@@ -19,8 +19,8 @@ telegram_message() {
 # Clone the Sync Repo
 
 # Initialize local repository
-repo init -u https://github.com/Arafattex/pixel -b thirteen
-# curl -o .repo/local_manifests/local_manifests.xml https://raw.githubusercontent.com/Arafattex/local_manifest/Lancelot_pixel/local_manifest.xml --create-dirs
+repo init -u https://github.com/PixelExperience/manifest -b thirteen
+curl -o .repo/local_manifests/local_manifests.xml https://raw.githubusercontent.com/Arafattex/local_manifest/Lancelot_pixell/local_manifest.xml --create-dirs
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
 # Exit
