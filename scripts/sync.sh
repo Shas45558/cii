@@ -20,8 +20,8 @@ telegram_message() {
 
 # Initialize local repository
 repo init -u https://github.com/PixelExperience/manifest -b thirteen
-curl -o .repo/local_manifests/local_manifests.xml https://raw.githubusercontent.com/Arafattex/local_manifest/Lancelot_pixell/local_manifest.xml --create-dirs
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+git clone https://github.com/Arafattex/local_manifest.git --depth 1 -b Lancelot_pixel .repo/local_manifests
+repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # Exit
 exit 0
