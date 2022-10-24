@@ -52,7 +52,7 @@ export ALLOW_MISSING_DEPENDENCIES=true
 
 
 # lunch the target
-lunch aosp_lava-eng
+lunch p404_lava-eng
     
 # Build the Code
 mka -j$(nproc --all) bacon
