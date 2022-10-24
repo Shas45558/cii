@@ -19,8 +19,8 @@ telegram_message() {
 # Clone the Sync Repo
 
 # Initialize local repository
-repo init -u https://github.com/PixelExperience/manifest -b thirteen
-git clone https://github.com/Arafattex/local_manifest.git --depth 1 -b Lancelot_pixel .repo/local_manifests
+repo init -u https://github.com/P-404/android_manifest -b tokui
+git clone https://github.com/Arafattex/local_manifest.git --depth 1 -b Lancelot_p404 .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # Exit
