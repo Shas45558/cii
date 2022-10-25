@@ -52,10 +52,10 @@ export ALLOW_MISSING_DEPENDENCIES=true
 
 
 # lunch the target
-lunch p404_lava-eng
+lunch stag_lava-eng
     
 # Build the Code
-mka -j$(nproc --all) bacon
+mka -j$(nproc --all) stag
 
 # Exit
 exit 0
