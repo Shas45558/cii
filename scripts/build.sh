@@ -55,7 +55,7 @@ export ALLOW_MISSING_DEPENDENCIES=true
 lunch stag_lava-eng
     
 # Build the Code
-mka -j$(nproc --all) stag
+make -j$(nproc --all) stag
 
 # Exit
 exit 0
