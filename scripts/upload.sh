@@ -23,11 +23,11 @@ echo "Uploading the Build..."
 echo "============================"
 
 # Change to the Output Directory
-cd out/target/product/lava
+cd out/target/product/${DEVICE}
 
 # Set FILENAME var
 FILENAME=recovery.img
-FILENAME2=boot.img
+FILENAME2=*.zip
 
 # Upload to oshi.at
 if [ -z "$TIMEOUT" ];then
