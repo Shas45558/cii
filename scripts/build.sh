@@ -55,7 +55,7 @@ export ALLOW_MISSING_DEPENDENCIES=true
 lunch aosp_lava-eng
     
 # Build the Code
-mka -j50 bacon
+mka -j8 bacon
 
 # Exit
 exit 0
