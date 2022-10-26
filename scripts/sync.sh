@@ -19,8 +19,8 @@ telegram_message() {
 # Clone the Sync Repo
 
 # Initialize local repository
-repo init -u https://github.com/StagOS/manifest.git -b t13
-git clone https://github.com/Arafattex/local_manifest.git --depth 1 -b Lancelot_stagos .repo/local_manifests
+repo init --depth=1 --no-repo-verify -u https://github.com/PixelExtended/manifest -b trece -g default,-mips,-darwin,-notdefault
+git clone https://github.com/Arafattex/local_manifest.git --depth 1 -b Lancelot_pex .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # Exit
