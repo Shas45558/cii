@@ -2,9 +2,9 @@
 
 # Device
 export TWRP_BRANCH="twrp-12.1"
-export DT_LINK="https://github.com/Arafattex/S-Vendor-Twrp-Tree-for-mt6768 -b Merlin_c"
+export DT_LINK="https://github.com/Arafattex/S-Vendor-Twrp-Tree-for-mt6768 -b Lancelot_c"
 
-export DEVICE="merlin"
+export DEVICE="lancelot"
 export OEM="xiaomi"
 
 # Build Target
