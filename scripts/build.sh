@@ -55,7 +55,7 @@ export ALLOW_MISSING_DEPENDENCIES=true
 lunch aosp_lava-eng
     
 # Build the Code
-mka -j$(nproc --all) bacon
+mka -j50 bacon
 
 # Exit
 exit 0
