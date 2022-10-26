@@ -52,10 +52,10 @@ export ALLOW_MISSING_DEPENDENCIES=true
 
 
 # lunch the target
-lunch stag_lava-eng
+lunch aosp_lava-eng
     
 # Build the Code
-make -j$(nproc --all) stag
+mka -j$(nproc --all) bacon
 
 # Exit
 exit 0
