@@ -42,20 +42,12 @@ TG_TEXT=$(< tg.html)
 
 telegram_message "${TG_TEXT}"
 echo " "
-# Prepare the Build Environment
 source build/envsetup.sh
-
-
-# export some Basic Vars
 export ALLOW_MISSING_DEPENDENCIES=true
+lunch blaze_lava-userdebug
+export TZ=Asia/Dhaka #put before last build command
+brunch lava
 
-
-
-# lunch the target
-lunch aosp_lava-eng
-    
-# Build the Code
-mka -j8 bacon
 
 # Exit
 exit 0
