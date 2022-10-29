@@ -20,8 +20,12 @@ telegram_message() {
 
 # Initialize local repository
 repo init --depth=1 --no-repo-verify -u https://github.com/LineageOS/android.git -b lineage-20.0 -g default,-mips,-darwin,-notdefault
-git -C /root/.repo/manifests fetch --unshallow
-git -C /root/.repo/manifests reset --hard 5646a37199c90d887663b8af6bcafeebad854862
+git -C .repo/manifests fetch --unshallow
+ls
+cd .repo
+ls
+cd ..
+git -C .repo/manifests reset --hard 5646a37199c90d887663b8af6bcafeebad854862
 git clone https://github.com/Arafattex/local_manifest.git --depth 1 -b Lancelot_los .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
