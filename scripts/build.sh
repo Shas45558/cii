@@ -44,7 +44,6 @@ telegram_message "${TG_TEXT}"
 echo " "
 source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
-lunch blaze_lava-userdebug
 export TZ=Asia/Dhaka #put before last build command
 brunch lava
 
