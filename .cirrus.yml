@@ -1,6 +1,6 @@
 env:
     # Twrp Sync Repositor
-    TWRP_SYNC: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
+    TWRP_SYNC: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
 
     # Config
     CONFIG: config.sh
