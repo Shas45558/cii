@@ -2,7 +2,7 @@
 
 # Device
 export TWRP_BRANCH="twrp-11"
-export DT_LINK="https://github.com/SHRP-Devices/device_xiaomi_lancelot.git -b android-10.0-R "
+export DT_LINK=" https://github.com/Arafattex/twrp_tree_mt6768.git -b Lcn"
 
 export DEVICE="lancelot"
 export OEM="xiaomi"
