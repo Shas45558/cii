@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Device
-export TWRP_BRANCH="twrp-10.0-deprecated"
+export TWRP_BRANCH="twrp-11"
 export DT_LINK="https://github.com/SHRP-Devices/device_xiaomi_lancelot.git -b android-10.0-R "
 
 export DEVICE="lancelot"
