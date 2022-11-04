@@ -7,7 +7,7 @@ source $CONFIG
 cd ~
 curl --create-dirs -L -o /usr/local/bin/repo -O -L https://storage.googleapis.com/git-repo-downloads/repo
 chmod a+rx /usr/local/bin/repo
-python3 -m pip3 install --upgrade pip3
+python3 -m pip install --upgrade pip
 
 # A Function to Send Posts to Telegram
 telegram_message() {
@@ -18,7 +18,7 @@ telegram_message() {
 }
 
 # Clone the Sync Repo
-pip3 install dumpyara
-pip3 install aospdtgen
+pip install dumpyara
+pip install aospdtgen
 # Exit
 exit 0
