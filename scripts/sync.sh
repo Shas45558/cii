@@ -7,6 +7,7 @@ source $CONFIG
 cd ~
 curl --create-dirs -L -o /usr/local/bin/repo -O -L https://storage.googleapis.com/git-repo-downloads/repo
 chmod a+rx /usr/local/bin/repo
+python3 -m pip3 install --upgrade pip3
 
 # A Function to Send Posts to Telegram
 telegram_message() {
