@@ -42,11 +42,9 @@ TG_TEXT=$(< tg.html)
 
 telegram_message "${TG_TEXT}"
 echo " "
-source build/envsetup.sh
-export ALLOW_MISSING_DEPENDENCIES=true
-lunch lineage_xaga-userdebug
-export TZ=Asia/Dhaka #put before last build command
-mka bacon
+wget https://hugeota.d.miui.com/V13.0.5.0.SJCCNXM/miui_LANCELOT_V13.0.5.0.SJCCNXM_9a2b91926f_12.0.zip
+python3 -m dumpyara miui_LANCELOT_V13.0.5.0.SJCCNXM_9a2b91926f_12.0.zip
+
 
 
 
