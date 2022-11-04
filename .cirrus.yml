@@ -22,7 +22,7 @@ task:
 
   Checks_script:
       - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/dump/scripts/checks.sh | bash
-      - sudo apt install unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract device-tree-compiler liblzma-dev python3-pip brotli liblz4-tool axel gawk aria2 detox cpio rename liblz4-dev curl -y
+      - apt install unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract device-tree-compiler liblzma-dev python3-pip brotli liblz4-tool axel gawk aria2 detox cpio rename liblz4-dev curl -y
   Sync_script:
       - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/dump/scripts/sync.sh | bash
 
