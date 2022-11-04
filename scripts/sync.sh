@@ -17,11 +17,9 @@ telegram_message() {
 }
 
 # Clone the Sync Repo
-
-# Initialize local repository
-repo init --depth=1 --no-repo-verify -u https://github.com/LineageOS/android.git -b lineage-20.0 -g default,-mips,-darwin,-notdefault
-git clone https://github.com/Arafattex/local_manifest.git --depth 1 -b Xaga_los .repo/local_manifests
-repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
-
+pip3 install dumpyara
+pip3 install aospdtgen
+wget https://hugeota.d.miui.com/V13.0.5.0.SJCCNXM/miui_LANCELOT_V13.0.5.0.SJCCNXM_9a2b91926f_12.0.zip
+python3 -m dumpyara miui_LANCELOT_V13.0.5.0.SJCCNXM_9a2b91926f_12.0.zip
 # Exit
 exit 0
