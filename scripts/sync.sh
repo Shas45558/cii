@@ -19,7 +19,5 @@ telegram_message() {
 # Clone the Sync Repo
 pip3 install dumpyara
 pip3 install aospdtgen
-wget https://hugeota.d.miui.com/V13.0.5.0.SJCCNXM/miui_LANCELOT_V13.0.5.0.SJCCNXM_9a2b91926f_12.0.zip
-python3 -m dumpyara miui_LANCELOT_V13.0.5.0.SJCCNXM_9a2b91926f_12.0.zip
 # Exit
 exit 0
