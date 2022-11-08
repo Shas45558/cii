@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 
 # Device
 export ROM_BRANCH="lineage-20"
