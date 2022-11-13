@@ -1,4 +1,4 @@
-env
+env:
     # Twrp Sync Repository 
     ROM_SYNC: https://github.com/LineageOS/android.git
     DEVICE_SYNC: https://github.com/Arafattex/Local_manifest_mt6768 --b Lancelot 
