@@ -17,7 +17,7 @@ telegram_message() {
 }
 
 # Clone the Sync Repo
-
+sudo apt install python3
 # Initialize local repository
 repo init --depth=1 --no-repo-verify -u https://github.com/LineageOS/android.git -b lineage-19.1 -g default,-mips,-darwin,-notdefault
 git clone https://github.com/Arafattex/local_manifest.git --depth 1 -b Lancelot_lospromg .repo/local_manifests
