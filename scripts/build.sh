@@ -43,11 +43,10 @@ TG_TEXT=$(< tg.html)
 telegram_message "${TG_TEXT}"
 echo " "
 source build/envsetup.sh
+lunch corvus_lava-userdebug
 export ALLOW_MISSING_DEPENDENCIES=true
-export TARGET_FLOS=true
-lunch lineage_lava-userdebug
 export TZ=Asia/Dhaka #put before last build command
-mka bacon
+make corvus
 
 
 
