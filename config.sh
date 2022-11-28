@@ -3,7 +3,7 @@
 # Device
 export ROM_BRANCH="lineage-20"
 
-export DEVICE="lancelot"
+export DEVICE="lancelot" 
 export OEM="xiaomi"
 
 # Build Target
