@@ -1,6 +1,6 @@
 image: ghcr.io/sushrut1101/docker:arch
 
-variables:
+variables: 
   TWRP_SYNC: "https://gitlab.com/OrangeFox/sync.git"
   CONFIG: "config.sh"
 
