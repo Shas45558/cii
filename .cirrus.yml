@@ -21,13 +21,13 @@ task:
       memory: 32G
 
   Checks_script:
-      - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/checks.sh | bash
+      - curl -sL https://raw.githubusercontent.com/Arafattex/ci/los/scripts/checks.sh | bash
   Sync_script:
-      - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/sync.sh | bash
+      - curl -sL https://raw.githubusercontent.com/Arafattex/ci/los/scripts/sync.sh | bash
 
   Build_script:
-      - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/build.sh | bash
+      - curl -sL https://raw.githubusercontent.com/Arafattex/ci/los/scripts/build.sh | bash
 
   Upload_script:
       - export TIMEOUT=43200 # Link timeout (in minutes)
-      - curl https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/los/scripts/upload.sh | bash
+      - curl https://raw.githubusercontent.com/Arafattex/ci/los/scripts/upload.sh | bash
