@@ -52,7 +52,7 @@ export ALLOW_MISSING_DEPENDENCIES=true
 
 
 # lunch the target
-lunch omni_${DEVICE}-eng
+lunch twrp_${DEVICE}-eng
     
 # Build the Code
 
