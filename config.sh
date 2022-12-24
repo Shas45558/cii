@@ -2,16 +2,16 @@
 
 # Device
 export TWRP_BRANCH="twrp-11"
-export DT_LINK=" https://github.com/Arafattex/twrp_tree_mt6768.git -b Lcn"
+export DT_LINK="https://github.com/Cereal-Mkos/TWRP-Moto-G20.git -b main"
 
-export DEVICE="lancelot"
-export OEM="xiaomi"
+export DEVICE="java"
+export OEM="motorola"
 
 # Build Target
 ## "recoveryimage" - for A-Only Devices without using Vendor Boot
 ## "bootimage" - for A/B devices without recovery partition (and without vendor boot)
 ## "vendorbootimage" - for devices Using vendor boot for the recovery ramdisk (Usually for devices shipped with Android 12 or higher)
-export TARGET="recoveryimage"
+export TARGET="bootimage"
 
 export OUTPUT="Twrp*.zip"
 # Not Recommended to Change
