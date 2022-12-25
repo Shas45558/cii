@@ -2,10 +2,10 @@
 
 # Device
 export TWRP_BRANCH="twrp-11"
-export DT_LINK="https://github.com/Arafattex/ums512.git -b Z33"
+export DT_LINK="https://github.com/Cereal-Mkos/TWRP-Moto-G20.git -b main"
 
-export DEVICE="Z33"
-export OEM="symphony"
+export DEVICE="java"
+export OEM="motorola"
 
 # Build Target
 ## "recoveryimage" - for A-Only Devices without using Vendor Boot
