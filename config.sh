@@ -2,10 +2,10 @@
 
 # Device
 export TWRP_BRANCH="twrp-11"
-export DT_LINK="https://github.com/Cereal-Mkos/TWRP-Moto-G20.git -b main"
+export DT_LINK="https://github.com/Arafattex/android_device_micromax_E7544.git -b 11"
 
-export DEVICE="java"
-export OEM="motorola"
+export DEVICE="E7544"
+export OEM="micromax"
 
 # Build Target
 ## "recoveryimage" - for A-Only Devices without using Vendor Boot
