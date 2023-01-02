@@ -2,10 +2,10 @@
 
 # Device
 export TWRP_BRANCH="twrp-11"
-export DT_LINK="https://github.com/Arafattex/android_device_micromax_E7544.git -b 11"
+export DT_LINK="https://github.com/gitclone-url/TWRP-Moto-G20.git -b main"
 
-export DEVICE="E7544"
-export OEM="micromax"
+export DEVICE="java"
+export OEM="motorola"
 
 
 # Build Target
