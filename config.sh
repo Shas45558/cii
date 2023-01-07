@@ -2,10 +2,10 @@
 
 # Device
 export TWRP_BRANCH="twrp-11"
-export DT_LINK="https://github.com/gitclone-url/TWRP-Moto-G20.git -b main"
+export DT_LINK="https://github.com/Arafattex/a13r_recovery -b lancelot_a13r"
 
-export DEVICE="java"
-export OEM="motorola"
+export DEVICE="lancelot"
+export OEM="xiaomi"
 
 
 # Build Target
