@@ -2,10 +2,10 @@
 
 # Device
 export TWRP_BRANCH="twrp-11"
-export DT_LINK="https://github.com/Arafattex/android_device_micromax_E7544 -b 11"
+export DT_LINK="https://github.com/Arafattex/a13r_recovery -b test"
 
-export DEVICE="E7544"
-export OEM="micromax"
+export DEVICE="lancelot"
+export OEM="xiaomi"
 
 # Build Target
 ## "recoveryimage" - for A-Only Devices without using Vendor Boot
