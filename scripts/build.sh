@@ -44,11 +44,10 @@ telegram_message "${TG_TEXT}"
 echo " "
 
 source build/envsetup.sh
-lunch corvus_lava-userdebug
+source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
-export USE_PROTON=true
 export TZ=Asia/Dhaka #put before last build command
-make corvus
+brunch lancelot user
 
 
 # Exit
