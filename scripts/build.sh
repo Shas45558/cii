@@ -34,7 +34,7 @@ echo -e \
 ✔️ The Build has been Triggered!
 
 📱 Device: "${DEVICE}"
-🖥 Build System: "${FOX_BRANCH}"
+🖥 Build System: "Kernel"
 🌲 Logs: <a href=\"https://cirrus-ci.com/build/${CIRRUS_BUILD_ID}\">Here</a>
 " > tg.html
 
@@ -42,22 +42,21 @@ TG_TEXT=$(< tg.html)
 
 telegram_message "${TG_TEXT}"
 echo " "
-
-# Prepare the Build Environment
-source build/envsetup.sh
-
-
-# export some Basic Vars
-export ALLOW_MISSING_DEPENDENCIES=true
-
-
-# lunch the target
-lunch twrp_${DEVICE}-eng
-    
-# Build the Code
-
-mka -j$(nproc --all) $TARGET
-
-
+export PATH="$HOME/kernel/toolchains/proton-clang/bin:$PATH"
+mkdir out
+export ARCH=arm64
+export SUBARCH=arm64
+export DTC_EXT=dtc
+make O=out ARCH=arm64 $DEVICE
+make -j$(nproc --all) O=out \
+                      ARCH=arm64 \
+                      CC=clang \
+                      CROSS_COMPILE=aarch64-linux-gnu- \
+                      CROSS_COMPILE_ARM32=arm-linux-gnueabi- \
+                      AR=llvm-ar \
+                      NM=llvm-nm \
+                      OBJCOPY=llvm-objcopy \
+                      OBJDUMP=llvm-objdump \
+                      STRIP=llvm-strip
 # Exit
 exit 0

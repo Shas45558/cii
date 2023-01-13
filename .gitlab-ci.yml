@@ -1,7 +1,7 @@
 image: ghcr.io/sushrut1101/docker:arch
 
 variables:
-  TWRP_SYNC: "https://gitlab.com/OrangeFox/sync.git"
+  CLANG_SYNC: https://github.com/Arafattex/prebuilts_clang_host_linux-x86_clang-protonhttps://github.com/Arafattex/prebuilts_clang_host_linux-x86_clang-proton.git
   CONFIG: "config.sh"
 
 OrangeFox-CI:

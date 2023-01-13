@@ -14,13 +14,12 @@ telegram_message() {
 	-d text="$1"
 }
 
-# Clone the Sync Repo
-repo init --depth=1 -u $TWRP_SYNC -b $TWRP_BRANCH
-repo sync
+# Clone clang
+git clone --depth=1  $CLANG_SYNC -b $CLANG_BRANCH /kernel/toolchains/proton-clang
 
-# Clone Trees
-DT_PATH="device/${OEM}/${DEVICE}"
-git clone $DT_LINK $DT_PATH || { echo "ERROR: Failed to Clone the Device Trees!" && exit 1; }
+
+# Clone Kernel
+git clone --depth=1 $KT_LINK $KT_BRANCH /kernel
 
 
 # Exit

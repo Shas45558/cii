@@ -23,11 +23,11 @@ echo "Uploading the Build..."
 echo "============================"
 
 # Change to the Output Directory
-cd out/target/product/${DEVICE}
+cd /kernel/out/arch/arm64/boot
 
 # Set FILENAME var
-FILENAME=recovery.img
-FILENAME2=boot.img
+FILENAME=Image.gz-dtb
+FILENAME2=dtbo.img
 
 # Upload to oshi.at
 if [ -z "$TIMEOUT" ];then
@@ -56,13 +56,13 @@ DATE_S=$(date +"%T")
 echo -e \
 "
 🦊 OrangeFox Recovery CI
-✅ Build Completed Successfully!
+✄1�7 Build Completed Successfully!
 📱 Device: "${DEVICE}"
 🖥 Build System: "${TWRP_BRANCH}"
 ⬇️ Download Link: <a href=\"${DL_LINK}\">Here</a>
 ⬇️ Download Link: <a href=\"${DL_LINK2}\">Here</a>
 📅 Date: "$(date +%d\ %B\ %Y)"
-⏱ Time: "$(date +%T)"
+⏄1�7 Time: "$(date +%T)"
 " > tg.html
 
 TG_TEXT=$(< tg.html)
