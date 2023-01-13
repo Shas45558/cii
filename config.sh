@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export CLANG_BRANCH="main"
+export CLANG_BRANCH="master"
 export KT_LINK="https://github.com/Arafattex/oc_a13r.git"
 export KT_BRANCE="a13r"
 export DEVICE="lancelot_defconfig"

@@ -47,16 +47,14 @@ mkdir out
 export ARCH=arm64
 export SUBARCH=arm64
 export DTC_EXT=dtc
-make O=out ARCH=arm64 $DEVICE
-make -j$(nproc --all) O=out \
-                      ARCH=arm64 \
-                      CC=clang \
-                      CROSS_COMPILE=aarch64-linux-gnu- \
-                      CROSS_COMPILE_ARM32=arm-linux-gnueabi- \
-                      AR=llvm-ar \
-                      NM=llvm-nm \
-                      OBJCOPY=llvm-objcopy \
-                      OBJDUMP=llvm-objdump \
-                      STRIP=llvm-strip
+make O=out ARCH=arm64 lancelot_defconfig
+make -j"$PROCS" O=out \
+                ARCH=arm64 \
+                CC=clang \
+                CROSS_COMPILE=aarch64-linux-gnu- \
+                CROSS_COMPILE_ARM32=arm-linux-gnueabi- \
+                LD=ld.lld \
+                NM=llvm-nm \
+                OBJCOPY=llvm-objcopy
 # Exit
 exit 0
