@@ -42,7 +42,7 @@ TG_TEXT=$(< tg.html)
 
 telegram_message "${TG_TEXT}"
 echo " "
-export PATH="$HOME/kernel/toolchains/proton-clang/bin:$PATH"
+export PATH="$HOME/toolchains/proton-clang/bin:$PATH"
 mkdir out
 export ARCH=arm64
 export SUBARCH=arm64

@@ -1,6 +1,6 @@
 env:
     # Twrp Sync Repositor
-    CLANG_SYNC: https://github.com/Arafattex/prebuilts_clang_host_linux-x86_clang-protonhttps://github.com/Arafattex/prebuilts_clang_host_linux-x86_clang-proton.git
+    CLANG_SYNC: https://github.com/Arafattex/prebuilts_clang_host_linux-x86_clang-proton.git
 
 
     # Config
