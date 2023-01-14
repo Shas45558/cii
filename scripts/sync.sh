@@ -15,11 +15,11 @@ telegram_message() {
 }
 
 # Clone clang
-git clone --depth=1  $CLANG_SYNC -b $CLANG_BRANCH /toolchains/proton-clang
+git clone --depth=1  $CLANG_SYNC -b $CLANG_BRANCH toolchains/proton-clang
 
 
 # Clone Kernel
-git clone --depth=1  $KT_LINK -b a13r /kernel
+git clone --depth=1  $KT_LINK -b a13r kernel
 
 
 # Exit
