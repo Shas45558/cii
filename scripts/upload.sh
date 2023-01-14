@@ -23,7 +23,7 @@ echo "Uploading the Build..."
 echo "============================"
 
 # Change to the Output Directory
-cd /kernel/out/arch/arm64/boot
+cd kernel/out/arch/arm64/boot
 
 # Set FILENAME var
 FILENAME=Image.gz-dtb
@@ -55,14 +55,14 @@ DATE_S=$(date +"%T")
 # Send the Message on Telegram
 echo -e \
 "
-🦊 OrangeFox Recovery CI
-✄1�7 Build Completed Successfully!
-📱 Device: "${DEVICE}"
-🖥 Build System: "${TWRP_BRANCH}"
-⬇️ Download Link: <a href=\"${DL_LINK}\">Here</a>
-⬇️ Download Link: <a href=\"${DL_LINK2}\">Here</a>
-📅 Date: "$(date +%d\ %B\ %Y)"
-⏄1�7 Time: "$(date +%T)"
+ðŸ¦Š OrangeFox Recovery CI
+âœ„1¤7 Build Completed Successfully!
+ðŸ“± Device: "${DEVICE}"
+ðŸ–¥ Build System: "${TWRP_BRANCH}"
+â¬‡ï¸ Download Link: <a href=\"${DL_LINK}\">Here</a>
+â¬‡ï¸ Download Link: <a href=\"${DL_LINK2}\">Here</a>
+ðŸ“… Date: "$(date +%d\ %B\ %Y)"
+â„1¤7 Time: "$(date +%T)"
 " > tg.html
 
 TG_TEXT=$(< tg.html)
