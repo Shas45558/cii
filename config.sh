@@ -2,9 +2,9 @@
 
 # Device
 export TWRP_BRANCH="twrp-11"
-export DT_LINK="https://github.com/Arafattex/a13r_recovery -b merlinx_a13r"
+export DT_LINK="https://github.com/Arafattex/a13r_recovery -b tt"
 
-export DEVICE="merlinx"
+export DEVICE="lancelot"
 export OEM="xiaomi"
 
 # Build Target
