@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 
 # Device
 export TWRP_BRANCH="android-11.0"
