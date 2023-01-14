@@ -19,7 +19,7 @@ git clone --depth=1  $CLANG_SYNC -b $CLANG_BRANCH /toolchains/proton-clang
 
 
 # Clone Kernel
-git clone --depth=1 $KT_LINK -b $KT_BRANCH /kernel
+git clone --depth=1  $KT_LINK -b $KT_BRANCH /kernel
 
 
 # Exit
