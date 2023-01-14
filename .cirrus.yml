@@ -1,6 +1,6 @@
 env:
     # Twrp Sync Repositor
-    TWRP_SYNC: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
+    TWRP_SYNC: https://github.com/PitchBlackRecoveryProject/manifest_pb.git
 
 
     # Config
@@ -22,14 +22,14 @@ task:
       memory: 20G
 
   Checks_script:
-      - curl -sL https://raw.githubusercontent.com/Arafattex/ci/twrp/scripts/checks.sh | bash
+      - curl -sL https://raw.githubusercontent.com/Arafattex/ci/pbrp/scripts/checks.sh | bash
 
   Sync_script:
-      - curl -sL https://raw.githubusercontent.com/Arafattex/ci/twrp/scripts/sync.sh | bash
+      - curl -sL https://raw.githubusercontent.com/Arafattex/ci/pbrp/scripts/sync.sh | bash
 
   Build_script:
-      - curl -sL https://raw.githubusercontent.com/Arafattex/ci/twrp/scripts/build.sh | bash
+      - curl -sL https://raw.githubusercontent.com/Arafattex/ci/pbrp/scripts/build.sh | bash
 
   Upload_script:
       - export TIMEOUT=43200 # Link timeout (in minutes)
-      - curl https://raw.githubusercontent.com/Arafattex/ci/twrp/scripts/upload.sh | bash
+      - curl https://raw.githubusercontent.com/Arafattex/ci/pbrp/scripts/upload.sh | bash
