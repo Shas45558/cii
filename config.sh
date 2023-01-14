@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Device
-export TWRP_BRANCH="twrp-11"
+export TWRP_BRANCH="android-11.0"
 export DT_LINK="https://github.com/Arafattex/android_device_micromax_E7544 -b 11b"
 
 export DEVICE="E7544"
