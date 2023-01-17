@@ -49,6 +49,7 @@ source build/envsetup.sh
 
 # export some Basic Vars
 export ALLOW_MISSING_DEPENDENCIES=true
+export CROSS_COMPILE_ARM32
 
 
 # lunch the target
