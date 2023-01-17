@@ -21,7 +21,7 @@ repo sync
 # Clone Trees
 DT_PATH="device/${OEM}/${DEVICE}"
 git clone $DT_LINK $DT_PATH || { echo "ERROR: Failed to Clone the Device Trees!" && exit 1; }
-git clone --depth=1 https://github.com/mt6768-dev/android_kernel_xiaomi_mt6768 -b lineage-20 kernel/xiaomi/mt6768
+git clone --depth=1 https://github.com/Arafattex/oc_a13r -b twrp kernel/xiaomi/mt6768
 got clone --depth=1 https://gitlab.com/ImSurajxD/clang-r450784d.git -b master prebuilts/clang/host/linux-x86/clang-r450784d
 # Exit
 exit 0
