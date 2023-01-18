@@ -18,6 +18,7 @@ telegram_message() {
 git clone --depth=1  $KT_LINK -b a13r kernel
 
 # Clone clang
-git clone --depth=1 https://github.com/kdrag0n/proton-clang.git -b master toolchains/proton-clang
+# git clone --depth=1 https://github.com/kdrag0n/proton-clang.git -b master toolchains/proton-clang
+git clone --depth=1 https://gitlab.com/ImSurajxD/clang-r450784d.git -b master toolchains/proton-clang
 # Exit
 exit 0
