@@ -42,23 +42,19 @@ TG_TEXT=$(< tg.html)
 
 telegram_message "${TG_TEXT}"
 echo " "
-export PATH="$HOME/clang-llvm/bin:$PATH"
-export PATH="$HOME/gcc64-aosp/bin:$PATH"
-export PATH="$HOME/gcc32-aosp/bin:$PATH"
-cd kernel 
 mkdir out
+cd kernel
 export ARCH=arm64
 export SUBARCH=arm64
 export DTC_EXT=dtc
 make O=out ARCH=arm64 lancelot_defconfig
 make -j"$PROCS" O=out \
-                  ARCH=arm64 \
-                  CC=clang \
-                  CLANG_TRIPLE=aarch64-linux-gnu- \
-                  CROSS_COMPILE=aarch64-linux-android- \
-                  CROSS_COMPILE_ARM32=arm-linux-androideabi- \
-                  LD=ld.lld \
-                  NM=llvm-nm \
-                  OBJCOPY=llvm-objcopy
+                ARCH=arm64 \
+                CC=clang \
+                CROSS_COMPILE=aarch64-linux-gnu- \
+                CROSS_COMPILE_ARM32=arm-linux-gnueabi- \
+                LD=ld.lld \
+                NM=llvm-nm \
+                OBJCOPY=llvm-objcopy
 # Exit
 exit 0
