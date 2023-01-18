@@ -13,7 +13,7 @@ telegram_message() {
 	-d parse_mode="HTML" \
 	-d text="$1"
 }
-
+sudo apt-get install gcc-aarch64-linux-gnu
 # Clone Kernel
 git clone --depth=1  $KT_LINK -b a13r kernel
 
