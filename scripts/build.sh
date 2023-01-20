@@ -42,19 +42,10 @@ TG_TEXT=$(< tg.html)
 
 telegram_message "${TG_TEXT}"
 echo " "
-mkdir out
+
 cd kernel
-export ARCH=arm64
-export SUBARCH=arm64
-export DTC_EXT=dtc
-make O=out ARCH=arm64 lancelot_defconfig
-make -j"$PROCS" O=out \
-                ARCH=arm64 \
-                CC=clang \
-                CROSS_COMPILE=aarch64-linux-gnu- \
-                CROSS_COMPILE_ARM32=arm-linux-gnueabi- \
-                LD=ld.lld \
-                NM=llvm-nm \
-                OBJCOPY=llvm-objcopy
+chmod 0777 lancelot.sh
+./lancelot.sh
+            
 # Exit
 exit 0
