@@ -23,11 +23,10 @@ echo "Uploading the Build..."
 echo "============================"
 
 # Change to the Output Directory
-cd kernel/out/arch/arm64/boot
+cd kernel/AnyKernel3-master
 
 # Set FILENAME var
-FILENAME=Image.gz-dtb
-FILENAME2=dtbo.img
+FILENAME=Shas-Dream-*.zip
 
 # Upload to oshi.at
 if [ -z "$TIMEOUT" ];then
