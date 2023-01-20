@@ -13,12 +13,13 @@ telegram_message() {
 	-d parse_mode="HTML" \
 	-d text="$1"
 }
-sudo apt-get install gcc-aarch64-linux-gnu
-# Clone Kernel
-git clone --depth=1  $KT_LINK -b a13r kernel
+git clone --depth=1 https://github.com/Arafattex/oc_a13r.git -b a13r kernel
+cd kernel
+git clone https://github.com/rama982/AnyKernel3 --depth=1 AnyKernel3-master
+mkdir clang-13
+cd clang-13
+git clone https://github.com/vijaymalav564/vortex-clang.git -b master --depth=1 aaa
+            
 
-# Clone clang
-# git clone --depth=1 https://github.com/kdrag0n/proton-clang.git -b master toolchains/proton-clang
-git clone --depth=1 https://gitlab.com/ImSurajxD/clang-r450784d.git -b master toolchains/proton-clang
 # Exit
 exit 0
