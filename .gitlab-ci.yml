@@ -4,12 +4,12 @@ variables:
   TWRP_SYNC: "https://gitlab.com/OrangeFox/sync.git"
   CONFIG: "config.sh"
 
-OrangeFox-CI:
+ci:
   stage: build
   timeout: 3 hours
   script:
     - source config.sh
-    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/shas/scripts/checks.sh | bash
-    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/shas/scripts/sync.sh | bash
-    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/shas/scripts/build.sh | bash
-    - curl -sL https://raw.githubusercontent.com/Arafattex/OrangeFox-CI/shas/scripts/upload.sh | bash
+    - curl -sL https://raw.githubusercontent.com/Arafattex/ci/shas/scripts/checks.sh | bash
+    - curl -sL https://raw.githubusercontent.com/Arafattex/ci/shas/scripts/sync.sh | bash
+    - curl -sL https://raw.githubusercontent.com/Arafattex/ci/shas/scripts/build.sh | bash
+    - curl -sL https://raw.githubusercontent.com/Arafattex/ci/shas/scripts/upload.sh | bash
