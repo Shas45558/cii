@@ -18,8 +18,10 @@ telegram_message() {
 
 # Clone the Sync Repo
 # Initialize local repository
-repo init --depth=1 --no-repo-verify -u https://github.com/LineageOS/android.git -b lineage-20.0 -g default,-mips,-darwin,-notdefault
-git clone https://github.com/Arafattex/local_manifest.git --depth 1 -b Lancelot_losa13r .repo/local_manifests
+repo init --depth=1 --no-repo-verify -u https://github.com/DerpFest-AOSP/manifest -b 13 -g default,-mips,-darwin,-notdefault
+git clone https://github.com/Arafattex/local_manifest.git --depth 1 -b Lancelot_drepa13r .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
+
+
 # Exit
 exit 0
