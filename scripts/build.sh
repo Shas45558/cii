@@ -43,12 +43,12 @@ TG_TEXT=$(< tg.html)
 telegram_message "${TG_TEXT}"
 echo " "
 
-source build/envsetup.sh
+
 source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 export TZ=Asia/Dhaka #put before last build command
-brunch lancelot user
-
+lunch derp_lancelot-user
+mka derp
 
 # Exit
 exit 0
