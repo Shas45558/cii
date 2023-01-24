@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Device
-export TWRP_BRANCH="twrp-11"
+export TWRP_BRANCH="twrp-10.0"
 export DT_LINK="https://github.com/Arafattex/a13r_recovery -b lancelot_wk"
 
 export DEVICE="lancelot"
