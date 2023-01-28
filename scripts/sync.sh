@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 
 # Source Vars
 source $CONFIG
