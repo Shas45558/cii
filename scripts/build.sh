@@ -47,8 +47,7 @@ echo " "
 source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 export TZ=Asia/Dhaka #put before last build command
-lunch derp_lancelot-user
-mka derp
+brunch lancelot user
 
 # Exit
 exit 0
