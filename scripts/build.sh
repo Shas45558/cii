@@ -49,7 +49,7 @@ source build/envsetup.sh
 
 # export some Basic Vars
 export ALLOW_MISSING_DEPENDENCIES=true
-export CROSS_COMPILE_ARM32=$(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin/arm-linux-gnueabi-
+# export CROSS_COMPILE_ARM32=$(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin/arm-linux-gnueabi-
 
 
 # lunch the target
