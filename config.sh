@@ -2,7 +2,7 @@
 
 # Device
 export TWRP_BRANCH="twrp-11"
-export DT_LINK="https://github.com/Arafattex/a13r_recovery.git -b lancelot_wk"
+export DT_LINK="https://github.com/Arafattex/a13r_recovery.git -b lancelot_a13rt"
 
 export DEVICE="lancelot"
 export OEM="xiaomi"
