@@ -2,7 +2,7 @@
 
 # Device
 export TWRP_BRANCH="twrp-11"
-export DT_LINK="https://github.com/Arafattex/a13r_recovery.git -b merlix_a13rt"
+export DT_LINK="https://github.com/Arafattex/a13r_recovery.git -b merlix_a13r"
 
 export DEVICE="merlinx"
 export OEM="xiaomi"
