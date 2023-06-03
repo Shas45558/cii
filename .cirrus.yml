@@ -5,7 +5,7 @@ env:
     # Config
     CONFIG: config.sh
 
-    # Telegram
+    # Telegram 
     TG_CHAT_ID: 1119385461
     TG_TOKEN: 2044609608:AAE-lWE9ZXhcLVcWKj5F4DMDYFU7eFIQOm0
 
