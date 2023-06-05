@@ -41,13 +41,10 @@ echo -e \
 TG_TEXT=$(< tg.html)
 
 telegram_message "${TG_TEXT}"
-echo " "
-source build/envsetup.sh
-export ALLOW_MISSING_DEPENDENCIES=true
-export BUILD_USERNAME=@shas45558
-export BUILD_HOSTNAME=@dhas45558
+echo " "source build/envsetup.sh
+lunch aospa_lancelot-userdebug
 export TZ=Asia/Dhaka #put before last build command
-brunch lancelot user
+./rom-build.sh lancelot -t userdebug -v beta
 
 
 # Exit
