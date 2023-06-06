@@ -41,7 +41,8 @@ echo -e \
 TG_TEXT=$(< tg.html)
 
 telegram_message "${TG_TEXT}"
-./rom-build.sh lancelot -t userdebug -v beta
+source build/envsetup.sh
+./rom-build.sh surya -t userdebug -v beta
 
 
 # Exit
