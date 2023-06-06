@@ -42,7 +42,6 @@ TG_TEXT=$(< tg.html)
 
 telegram_message "${TG_TEXT}"
 echo " "source build/envsetup.sh
-lunch aospa_lancelot-userdebug
 export TZ=Asia/Dhaka #put before last build command
 ./rom-build.sh lancelot -t userdebug -v beta
 
