@@ -42,7 +42,8 @@ TG_TEXT=$(< tg.html)
 
 telegram_message "${TG_TEXT}"
 source build/envsetup.sh
-./rom-build.sh surya -t userdebug -v beta
+export TARGET_PRODUCT=aospa_lancelot
+./rom-build.sh lancelot -t userdebug -v beta
 
 
 # Exit
