@@ -45,6 +45,7 @@ telegram_message "${TG_TEXT}"
 lunch lineage_lancelot-user
 export BUILD_USERNAME=shas45558
 export TZ=Asia/Kolkata #put before last build command
+export PATH_OVERRIDE_SOONG := $(shell echo $(TOOLS_PATH_OVERRIDE))
 m bacon
 
 # Exit
