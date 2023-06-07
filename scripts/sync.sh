@@ -18,9 +18,8 @@ telegram_message() {
 
 # Clone the Sync Repo
 # Initialize local repository
-
-repo init --depth=1 --no-repo-verify -u https://github.com/AOSPA/manifest -b topaz -g default,-mips,-darwin,-notdefault
-git clone https://github.com/Arafattex/local_manifest.git --depth 1 -b aospaa13r .repo/local_manifests
+repo init --depth=1 --no-repo-verify -u repo init -u https://github.com/alphadroid-project/manifest -b alpha-13 --git-lfs -g default,-mips,-darwin,-notdefault
+git clone https://github.com/Arafattex/local_manifest.git --depth 1 -b adroid .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 
