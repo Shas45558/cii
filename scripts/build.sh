@@ -41,11 +41,10 @@ echo -e \
 TG_TEXT=$(< tg.html)
 
 telegram_message "${TG_TEXT}"
-source build/envsetup.sh
-lunch lineage_lancelot-user
-export BUILD_USERNAME=shas45558
-export TZ=Asia/Kolkata #put before last build command
-m bacon
 
+source build/envsetup.sh
+lunch lineage_lancelot-userdebug
+export TZ=Asia/Dhaka #put before last build command
+make bacon
 # Exit
 exit 0
