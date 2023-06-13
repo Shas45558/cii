@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 
 # Telegram
 tg_check=$(grep 'TG' $CONFIG | wc -l)
